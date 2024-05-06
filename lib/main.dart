@@ -17,7 +17,6 @@ class MyApp extends StatelessWidget {
           lazy: false,
           create: (_)=> DiscoverProvider())
       ],
-
       child: MaterialApp(
         title: 'Reelstok',
         debugShowCheckedModeBanner: false,
