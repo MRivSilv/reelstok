@@ -3,7 +3,7 @@ import 'package:reelstok/domain/entities/videos_post.dart';
 import '../../infraestructura/models/local_video_model.dart';
 import '../../shared/data/local_video_posts.dart';
 
-class DiscoverProvider extends ChangeNotifier[
+class DiscoverProvider extends ChangeNotifier{
 
   bool initialLoading = true;
   List<VideoPost> videos = [];
@@ -20,4 +20,4 @@ class DiscoverProvider extends ChangeNotifier[
   notifyListeners();
   }
   
-]
+}

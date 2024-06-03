@@ -27,19 +27,20 @@ class _CustomIconButton extends StatelessWidget {
   final Color? color;
 
   const _CustomIconButton({
-    super.key,
+    Key? key,
     required this.value,
     required this.iconData,
+    Color? iconColor,
+  }) : color = iconColor ?? Colors.white;
 
-    iconColor
-  }):color = iconColor ?? Colors.white;
-
-  @override 
+  @override
   Widget build(BuildContext context) {
     return Column(
       children: [
-        IconButton(onPressed: () {},
-        icon: Icon(iconData, color: color, size: 30)),
+        IconButton(
+          onPressed: () {},
+          icon: Icon(iconData, color: color, size: 30),
+        ),
         Text(HumanFormats.humanReadableNumber(value.toDouble())),
       ],
     );
